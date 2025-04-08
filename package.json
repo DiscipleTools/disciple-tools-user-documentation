@@ -1,0 +1,15 @@
+{
+  "name": "dt-user-documentation",
+  "version": "1.0.0",
+  "description": "Disciple.Tools User Documentation",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "author": "Disciple.Tools",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "cypress": "^12.17.1"
+  }
+} 

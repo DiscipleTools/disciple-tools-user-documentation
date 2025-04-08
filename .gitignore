@@ -1,0 +1,19 @@
+# Node modules and dependencies
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+
+# Cypress generated files
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+
+# Build artifacts
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db 
