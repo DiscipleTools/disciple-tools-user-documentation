@@ -28,6 +28,7 @@
 Cypress.Commands.add('dtLogin', (username, password) => {
   // Navigate to DT frontend login page.
   cy.visit('/wp-login.php');
+  cy.wait(500);
 
   // Specify credentials and submit.
   cy.get('#user_login').clear().type(username);

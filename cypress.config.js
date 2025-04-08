@@ -31,7 +31,7 @@ module.exports = defineConfig({
         },
       });
     },
-    baseUrl: 'https://multisite.lwp/',
+    baseUrl: 'https://multisite.lwp/blank',
   },
   // Global settings for better test reliability
   defaultCommandTimeout: 15000,

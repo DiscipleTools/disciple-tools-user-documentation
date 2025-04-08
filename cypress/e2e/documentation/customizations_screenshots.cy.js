@@ -8,7 +8,7 @@ describe('Customizations Documentation Screenshots', () => {
     const username = dt_config.credentials.admin.username;
     const password = dt_config.credentials.admin.password;
     cy.session([username, password], () => {
-    cy.dtLogin(username, password);
+      cy.dtLogin(username, password);
     });
     
     // Set a large viewport for all tests to prevent truncation
