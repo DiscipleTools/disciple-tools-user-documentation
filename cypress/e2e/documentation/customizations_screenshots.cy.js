@@ -7,9 +7,7 @@ describe('Customizations Documentation Screenshots', () => {
     const dt_config = cy.config('dt');
     const username = dt_config.credentials.admin.username;
     const password = dt_config.credentials.admin.password;
-    cy.session([username, password], () => {
-      cy.dtLogin(username, password);
-    });
+    cy.dtLogin(username, password);
     
     // Set a large viewport for all tests to prevent truncation
     cy.viewport(1280, 1024);
