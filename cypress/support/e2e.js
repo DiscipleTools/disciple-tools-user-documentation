@@ -16,6 +16,23 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 
+// Alternatively you can use CommonJS syntax:
+// require('./commands')
+
+// Auto-hide Cypress UI elements when recording videos
+before(() => {
+  if (Cypress.config('video')) {
+    cy.hideCommandLog();
+  }
+});
+
+// This helps with screenshots being fuzzy
+Cypress.Screenshot.defaults({
+  capture: 'viewport',
+  scale: true,
+  disableTimersAndAnimations: true,
+});
+
 // Add screenshot tasks
 import { existsSync, mkdirSync, renameSync, writeFileSync } from 'fs';
 import { dirname } from 'path';
